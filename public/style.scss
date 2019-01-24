@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: url(https://2.bp.blogspot.com/-Drfk2NCL534/Wi_kzZNOOxI/AAAAAAAAAEE/IYc6PiRMBPE4D2kyM5BvZzkOMQIrkNniACLcBGAs/s1600/spaghetti-2914388_1920.jpg)
+  background: url(https://images.pexels.com/photos/988873/pexels-photo-988873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
     repeat;
   font-family: "SimHei", "Courier New", Courier, monospace;
 }
@@ -40,8 +40,9 @@ ul {
 }
 
 .header {
-  background: url("https://cdn.pixabay.com/photo/2017/11/03/13/42/spaghetti-2914388_1280.jpg")
+  background: url(https://www.cleaneatingmag.com/.image/t_share/MTQ0NzQxNjgyODc3Mzc1NjU2/light--easy-prawn-pasta.jpg)
     center center no-repeat;
+    background-size: cover;
   height: 400px;
   position: relative;
 
@@ -267,7 +268,7 @@ ul {
       width: 100%;
     }
   }
-  &_menu_content{
+  &_menu_content {
     letter-spacing: 10px;
     font-weight: bold;
   }
