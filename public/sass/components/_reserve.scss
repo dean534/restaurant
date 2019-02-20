@@ -1,0 +1,68 @@
+.reserve {
+  padding: 1rem;
+  &_title {
+    text-align: center;
+  }
+
+  &_block {
+    background-color: white;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-style: solid;
+    border: 3px 0 0 0;
+    border-color: rgba(181, 91, 59, 1);
+    box-shadow: 3px 3px 0 rgba(50, 50, 50, 0.5);
+  }
+
+  &_item {
+    padding: 1rem;
+  }
+
+  &_label,
+  &_input {
+    margin-bottom: 16px;
+    padding-bottom: 4px;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  &_btn-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_btn {
+    box-sizing: border-box;
+    width: 48%;
+    padding: 5px;
+    &-cancel {
+      background-color: rgb(204, 204, 255);
+      &:hover {
+        background-color: rgb(94, 134, 193);
+      }
+    }
+
+    &-confirm {
+      background-color: rgb(255, 165, 0);
+      &:hover {
+        background-color: rgb(255, 77, 0);
+      }
+    }
+  }
+  &_map {
+    box-sizing: border-box;
+    padding: 0.1rem;
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: $RWD-md) {
+  .reserve_block {
+    display: flex;
+  }
+
+  .reserve_item {
+    flex: 1 1 0;
+  }
+}

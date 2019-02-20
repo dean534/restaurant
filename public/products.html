@@ -4,152 +4,206 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
     <title>面面西食館</title>
   </head>
   <body>
-    <div class="body_container">
-<!-- 標頭 -->
-<header class="header">
-    <nav class="header_nav">
-      <div class="header_logo"><a href="index.html"><b>面面西食館</b></a></div>
-      <ul  class="header_navbar" id="header_navbar">
-        <li><a href="./index.html#feature">本店特色</a></li>
-        <li><a href="./index.html#reserve">聯絡我們</a></li>
-        <li><a href="./products.html">餐點一覽</a></li>
-        <li><a href="./login.html">會員登入</a></li>
-      </ul>
-      <button class="header_btn" id="header_btn">
+    <!-- top -->
+    <nav class="top">
+      <div class="top_logo">
+        <a href="index.html"><b>面面西食館</b></a>
+      </div>
+      <button class="top_btn" id="header_btn">
         <i class="fas fa-bars fa-2x"></i>
       </button>
+      <input class="top_nav-toggler" type="checkbox" />
+      <ul class="nav" id="header_navbar">
+        <li class="nav_item">
+          <a href="./index.html#feature">本店特色</a>
+        </li>
+        <li class="nav_item">
+          <a href="./index.html#reserve">聯絡我們</a>
+        </li>
+        <li class="nav_item"><a href="./products.html">餐點一覽</a></li>
+        <li class="nav_item"><a href="./login.html">會員登入</a></li>
+      </ul>
     </nav>
-    <div class="header_content">
-      <h1>不可多得的好味道</h1>
-      <p>店長推薦</p>
-      <p><i class="fas fa-star"></i>番茄鮮蝦義大利麵<i class="fas fa-star"></i></p>
-    </div>
-  </header>
-    <!-- product -->
-    <section class="product">
-      <div class="product_menu">
-        <h3 class="product_menu_title">美食清單</h3>
+    <div class="body_container">
+      <!-- header -->
+      <header class="header">
+        <div class="header_content">
+          <h1>不可多得的好味道</h1>
+          <p>店長推薦</p>
+          <p>
+            <i class="fas fa-star"></i>番茄鮮蝦義大利麵<i
+              class="fas fa-star"
+            ></i>
+          </p>
+        </div>
+      </header>
+      <!-- product -->
+      <section class="product">
+        <div class="product_menu">
+          <div class="product_menu_title">美食清單</div>
           <div class="product_menu_content">
-            <button type="button" class="product_menu_item product_menu_item--active">總覽 (20)</button>
-            <button type="button" class="product_menu_item">主廚推薦 (4)</button>
+            <button
+              type="button"
+              class="product_menu_item product_menu_item--active"
+            >
+              總覽 (20)
+            </button>
+            <button type="button" class="product_menu_item">
+              主廚推薦 (4)
+            </button>
             <button type="button" class="product_menu_item">青醬 (7)</button>
             <button type="button" class="product_menu_item">白醬 (7)</button>
             <button type="button" class="product_menu_item">紅醬 (6)</button>
           </div>
-
-      </div>
-      <div class="product_area">
-        <div class="product_searchbar">
-          <input type="text">
-          <button><i class="fas fa-search"></i></button>
         </div>
-        <div class="product_showcase">
+        <hr />
+        <div class="product_area">
+          <div class="product_searchbar">
+            <input type="text" />
+            <button><i class="fas fa-search"></i></button>
+          </div>
+          <div class="product_showcase">
             <div class="product_goods">
-                <div class="product_image">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8bl1DJijBhkrDgDojuYbTWhbthMC0JBSfpdpBehOmZEqfag5DdQ" alt="product">
-                  <button class="product_favorite"><i class="far fa-heart fa-2x"></i></button>
+              <div class="product_image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8bl1DJijBhkrDgDojuYbTWhbthMC0JBSfpdpBehOmZEqfag5DdQ"
+                  alt="product"
+                />
+                <button class="product_favorite">
+                  <i class="far fa-heart fa-2x"></i>
+                </button>
+              </div>
+              <div class="product_content">
+                <div class="product_name">
+                  青醬海鮮義大利麵<br />
+                  <span class="product_subname">Seafood pesto pasta </span>
                 </div>
-                <div class="product_content">
-                  <div class="product_name">
-                    青醬海鮮義大利麵<br/>
-                    <span class="product_subname">Seafood pesto pasta </span>
-                  </div>
-    
-                  <h3 class="product_price">$170</h3>
-                  <button class="product_btn"><i class="fas fa-shopping-cart"></i>放入購物車</button>
+                <h3 class="product_price">$170</h3>
+                <button class="product_btn">
+                  <i class="fas fa-shopping-cart"></i>放入購物車
+                </button>
+              </div>
+            </div>
+            <div class="product_goods">
+              <div class="product_image">
+                <img
+                  src="https://scm-assets.constant.co/scm/unilever/a6798e909fa57bfd19c3e7f00737e5d6/d6ed4451-2c6b-4782-b19e-da7c6c558cc3.jpg"
+                  alt="product"
+                />
+                <button class="product_favorite">
+                  <i class="far fa-heart fa-2x"></i>
+                </button>
+              </div>
+              <div class="product_content">
+                <div class="product_name">
+                  茄汁肉醬義大利麵<br />
+                  <span class="product_subname">Spaghetti Bolognese </span>
                 </div>
-              </div>              <div class="product_goods">
-                  <div class="product_image">
-                    <img src="https://scm-assets.constant.co/scm/unilever/a6798e909fa57bfd19c3e7f00737e5d6/d6ed4451-2c6b-4782-b19e-da7c6c558cc3.jpg" alt="product">
-                    <button class="product_favorite"><i class="far fa-heart fa-2x"></i></button>
-                  </div>
-                  <div class="product_content">
-                    <div class="product_name">
-                        茄汁肉醬義大利麵<br/>
-                      <span class="product_subname">Spaghetti Bolognese </span>
-                    </div>
-      
-                    <h3 class="product_price">$130</h3>
-                    <button class="product_btn"><i class="fas fa-shopping-cart"></i>放入購物車</button>
-                  </div>
-                </div>             
-                 <div class="product_goods">
-                    <div class="product_image">
-                      <img src="https://cdn.lifesambrosia.com/wp-content/uploads/spaghetti-carbonara.jpg" alt="product">
-                      <button class="product_favorite"><i class="far fa-heart fa-2x"></i></button>
-                    </div>
-                    <div class="product_content">
-                      <div class="product_name">
-                          奶油培根義大利麵<br/>
-                        <span class="product_subname">Spaghetti Carbonara </span>
-                      </div>
-                      <h3 class="product_price">$140</h3>
-                      <button class="product_btn"><i class="fas fa-shopping-cart"></i>放入購物車</button>
-                    </div>
-                  </div>
-              <div class="product_goods">
-                  <div class="product_image">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl0_5NgWXHVplo4sHicAmTZaAgWbO1fKx4Xq60WXDOve86QyN5" alt="product">
-                    <button class="product_favorite"><i class="far fa-heart fa-2x"></i></button>
-                  </div>
-                  <div class="product_content">
-                    <div class="product_name">
-                      鮮蝦墨魚義大利麵<br/>
-                      <span class="product_subname">Squid Ink Pasta</span>
-                    </div>
-                    <h3 class="product_price">$150</h3>
-                    <button class="product_btn"><i class="fas fa-shopping-cart"></i>放入購物車</button>
-                  </div>
-                  
+                <h3 class="product_price">$130</h3>
+                <button class="product_btn">
+                  <i class="fas fa-shopping-cart"></i>放入購物車
+                </button>
+              </div>
+            </div>
+            <div class="product_goods">
+              <div class="product_image">
+                <img
+                  src="https://cdn.lifesambrosia.com/wp-content/uploads/spaghetti-carbonara.jpg"
+                  alt="product"
+                />
+                <button class="product_favorite">
+                  <i class="far fa-heart fa-2x"></i>
+                </button>
+              </div>
+              <div class="product_content">
+                <div class="product_name">
+                  奶油培根義大利麵<br />
+                  <span class="product_subname">Spaghetti Carbonara </span>
                 </div>
-                <div class="product_goods">
-                    <div class="product_image">
-                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl0_5NgWXHVplo4sHicAmTZaAgWbO1fKx4Xq60WXDOve86QyN5" alt="product">
-                      <button class="product_favorite"><i class="far fa-heart fa-2x"></i></button>
-                    </div>
-                    <div class="product_content">
-                      <div class="product_name">
-                        鮮蝦墨魚義大利麵<br/>
-                        <span class="product_subname">Squid Ink Pasta</span>
-                      </div>
-                      <h3 class="product_price">$150</h3>
-                      <button class="product_btn"><i class="fas fa-shopping-cart"></i>放入購物車</button>
-                    </div>
+                <h3 class="product_price">$140</h3>
+                <button class="product_btn">
+                  <i class="fas fa-shopping-cart"></i>放入購物車
+                </button>
+              </div>
+            </div>
+            <div class="product_goods">
+              <div class="product_image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl0_5NgWXHVplo4sHicAmTZaAgWbO1fKx4Xq60WXDOve86QyN5"
+                  alt="product"
+                />
+                <button class="product_favorite">
+                  <i class="far fa-heart fa-2x"></i>
+                </button>
+              </div>
+              <div class="product_content">
+                <div class="product_name">
+                  鮮蝦墨魚義大利麵<br />
+                  <span class="product_subname">Squid Ink Pasta</span>
+                </div>
+                <h3 class="product_price">$150</h3>
+                <button class="product_btn">
+                  <i class="fas fa-shopping-cart"></i>放入購物車
+                </button>
+              </div>
+            </div>
+            <div class="product_goods">
+              <div class="product_image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl0_5NgWXHVplo4sHicAmTZaAgWbO1fKx4Xq60WXDOve86QyN5"
+                  alt="product"
+                />
+                <button class="product_favorite">
+                  <i class="far fa-heart fa-2x"></i>
+                </button>
+              </div>
+              <div class="product_content">
+                <div class="product_name">
+                  鮮蝦墨魚義大利麵<br />
+                  <span class="product_subname">Squid Ink Pasta</span>
+                </div>
+                <h3 class="product_price">$150</h3>
+                <button class="product_btn">
+                  <i class="fas fa-shopping-cart"></i>放入購物車
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        
-      </div>
-    </section>
+      </section>
 
-    <!-- footer-->
-    <footer class="footer">
-        <div class="footer_block"> 
-      <div class="footer_contact">
-        <div><i class="fas fa-phone"></i>(02)-2689-5554</div>
-        <div><i class="fas fa-map-marker-alt"></i>台北市民生西路186巷5號</div>
-        <div><i class="far fa-envelope"></i>shishi@restaurant.com</div>
-      </div>
-      <div class="footer_nav"> 
-        <div class="nav">
-        <span >
-          <a href="#"><i class="fab fa-google-plus-square fa-2x"></i></i></a>
-        </span>
-        <span>
-          <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-        </span>
-        <span>
-          <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
-        </span>
-      </div>
-      <div class="footer_logo">面面西食館</div>
+      <!-- footer-->
+      <footer class="footer">
+        <div class="footer_contact">
+          <div><i class="fas fa-phone"></i>(02)-2689-5554</div>
+          <div><i class="fas fa-map-marker-alt"></i>台北市民生西路186巷5號</div>
+          <div><i class="far fa-envelope"></i>shishi@restaurant.com</div>
+        </div>
+        <div class="footer_nav">
+          <div class="footer_social">
+            <span>
+              <a href="#"><i class="fab fa-google-plus-square fa-2x"></i></a>
+            </span>
+            <span>
+              <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+            </span>
+            <span>
+              <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+            </span>
+          </div>
+          <div class="footer_logo">面面西食館</div>
+        </div>
+      </footer>
     </div>
-  </div>
-  </footer>
-</div> 
-<script  src="./all.js"></script>
-</body>
+  </body>
 </html>

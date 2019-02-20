@@ -1,0 +1,31 @@
+.login {
+    text-align: center;
+    padding: 1rem;
+    &_title {
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    &_block {
+      background-color: white;
+      margin: 1rem auto;
+      padding: 1rem;
+      border-style: solid;
+      border-color: rgba(181, 91, 59, 1);
+      box-shadow: 3px 3px 0 rgba(50, 50, 50, 0.5);
+      max-width: 300px;
+    }
+  
+    &_btn {
+      letter-spacing: 3px;
+      font-weight: bolder;
+      padding: 0.5rem;
+      background-color: cadetblue;
+    }
+    form {
+      & > * {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+      }
+    }
+  }

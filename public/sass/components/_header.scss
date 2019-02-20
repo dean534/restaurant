@@ -1,0 +1,24 @@
+.header {
+  background: url(https://www.cleaneatingmag.com/.image/t_share/MTQ0NzQxNjgyODc3Mzc1NjU2/light--easy-prawn-pasta.jpg)
+    center center no-repeat;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+  box-shadow: 2px 2px #888888;
+  &_content {
+    min-width: 60px;
+    position: absolute;
+    padding: 4px 20px;
+    border-radius: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    & > p {
+      letter-spacing: 4px;
+    }
+  }
+}

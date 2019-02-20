@@ -1,0 +1,38 @@
+.feature {
+    padding: 1rem 2rem;
+    text-align: center;
+    &_title {
+      font-weight: bolder;
+      font-size: 1.5rem;
+    }
+    &_item {
+      margin: 1rem;
+      padding: 1rem;
+      background-color: rgb(204, 229, 255);
+      border-radius: 4px;
+    }
+    &_item-title {
+      font-weight: bolder;
+    }
+    &_avatar {
+      margin: auto;
+      overflow: hidden;
+      border-radius: 100%;
+      max-width: 200px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $RWD-md) {
+    .feature_block{
+      display: flex;
+    }
+    .feature_block {
+      display: flex;
+    }
+    .feature_item{
+      flex: 1 1 0;
+    }
+
+  }
+  

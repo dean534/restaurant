@@ -4,111 +4,201 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
     <title>面面西食館</title>
   </head>
   <body>
+    <!-- top -->
+    <nav class="top">
+      <div class="top_logo">
+        <a href="index.html"><b>面面西食館</b></a>
+      </div>
+      <button class="top_btn" id="header_btn">
+        <i class="fas fa-bars fa-2x"></i>
+      </button>
+      <input class="top_nav-toggler" type="checkbox" />
+      <ul class="nav" id="header_navbar">
+        <li class="nav_item">
+          <a href="./index.html#feature">本店特色</a>
+        </li>
+        <li class="nav_item">
+          <a href="./index.html#reserve">聯絡我們</a>
+        </li>
+        <li class="nav_item"><a href="./products.html">餐點一覽</a></li>
+        <li class="nav_item"><a href="./login.html">會員登入</a></li>
+      </ul>
+    </nav>
     <div class="body_container">
-      <!-- 標頭 -->
+      <!-- header -->
       <header class="header">
-        <nav class="header_nav">
-          <div class="header_logo"><a href="index.html"><b>面面西食館</b></a></div>
-          <ul  class="header_navbar" id="header_navbar">
-            <li><a href="./index.html#feature">本店特色</a></li>
-            <li><a href="./index.html#reserve">聯絡我們</a></li>
-            <li><a href="./products.html">餐點一覽</a></li>
-            <li><a href="./login.html">會員登入</a></li>
-          </ul>
-          <button class="header_btn" id="header_btn">
-            <i class="fas fa-bars fa-2x"></i>
-          </button>
-        </nav>
         <div class="header_content">
           <h1>不可多得的好味道</h1>
           <p>店長推薦</p>
-          <p><i class="fas fa-star"></i>番茄鮮蝦義大利麵<i class="fas fa-star"></i></p>
+          <p>
+            <i class="fas fa-star"></i>番茄鮮蝦義大利麵<i
+              class="fas fa-star"
+            ></i>
+          </p>
         </div>
       </header>
-      
       <!-- feature -->
       <section id="feature" class="feature">
-        <h3 class="feature_title">美味的秘訣 </br> 除了對料理的熱誠外 <br> 就是...</h3>
+        <h3 class="feature_title">
+          美味的秘訣 <br />
+          除了對料理的熱誠外 <br />
+          就是...
+        </h3>
         <div class="feature_block">
           <div class="feature_item">
             <div class="feature_avatar">
-              <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUPJ28jAGohjzRa601v34L0IZKD2pEpdvjk5ttjqw9sG2lxqmY" alt="照片" />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUPJ28jAGohjzRa601v34L0IZKD2pEpdvjk5ttjqw9sG2lxqmY"
+                alt="照片"
+              />
             </div>
             <div class="feature_item-content">
               <h3 class="feature_item-title">專業的廚師</h3>
-              <p class="feature_item-text">je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća, kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih da bi napravio knjigu s uzorkom tiska. </p>
+              <p class="feature_item-text">
+                je jednostavno probni tekst koji se koristi u tiskarskoj i
+                slovoslagarskoj industriji. Lorem Ipsum postoji kao industrijski
+                standard još od 16-og stoljeća, kada je nepoznati tiskar uzeo
+                tiskarsku galiju slova i posložio ih da bi napravio knjigu s
+                uzorkom tiska.
+              </p>
             </div>
           </div>
           <div class="feature_item">
             <div class="feature_avatar">
-              <img src="https://images.unsplash.com/photo-1507844090982-e6e9452ea68d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1047&q=80" alt="照片" />
+              <img
+                src="https://images.unsplash.com/photo-1507844090982-e6e9452ea68d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1047&q=80"
+                alt="照片"
+              />
             </div>
             <div class="block-content">
               <h3 class="feature_item-title">本地新鮮的食材</h3>
-              <p class="feature_item-text">Postoje mnoge varijacije odlomaka iz Lorem Ipsum-a, ali većina je pretrpjela kojekakve promjene s dodanim humorom, ili nasumičnim riječima koje nikako tu ne spadaju. Ako trebate koristiti Lorem Ipsum, morate biti sigurni da tekst ne sadrži skrivene nepodobne riječi ili fraze. </p>
+              <p class="feature_item-text">
+                Postoje mnoge varijacije odlomaka iz Lorem Ipsum-a, ali većina
+                je pretrpjela kojekakve promjene s dodanim humorom, ili
+                nasumičnim riječima koje nikako tu ne spadaju. Ako trebate
+                koristiti Lorem Ipsum, morate biti sigurni da tekst ne sadrži
+                skrivene nepodobne riječi ili fraze.
+              </p>
             </div>
           </div>
           <div class="feature_item">
             <div class="feature_avatar">
-              <img src="https://images.unsplash.com/photo-1519974395578-e3e2a6c0313f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="照片" />
+              <img
+                src="https://images.unsplash.com/photo-1519974395578-e3e2a6c0313f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                alt="照片"
+              />
             </div>
             <div class="block-content">
               <h3 class="feature_item-title">追求完美的決心</h3>
-              <p class="feature_item-text">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí".</p>
+              <p class="feature_item-text">
+                Es un hecho establecido hace demasiado tiempo que un lector se
+                distraerá con el contenido del texto de un sitio mientras que
+                mira su diseño. El punto de usar Lorem Ipsum es que tiene una
+                distribución más o menos normal de las letras, al contrario de
+                usar textos como por ejemplo "Contenido aquí, contenido aquí".
+              </p>
             </div>
           </div>
         </div>
       </section>
-      
-      <!--網友推薦-->
+
+      <!-- recommand -->
       <section id="recommand" class="recommand">
-        <h1 class="recommand_title">聽聽老饕們的話</h1>
+        <h1 class="recommand_title">聽聽老饕們怎麼說</h1>
         <div class="recommand_block">
           <div class="recommand_item">
             <div class="recommand_avatar">
-              <img src="https://image.flaticon.com/icons/svg/145/145848.svg" alt="avatar" />
+              <img
+                src="https://image.flaticon.com/icons/svg/145/145848.svg"
+                alt="avatar"
+              />
             </div>
             <div class="recommand_content">
               <h4 class="recommand_name">~ 宇宙大吃貨 ~</h4>
-              <p class="recommand_text">平價台味義大利麵，料多量可加大，居然在麵裡還吃到冬瓜與高麗菜，內用有紅茶喝到飽，但座位不多。</p>
+              <p class="recommand_text">
+                平價台味義大利麵，料多量可加大，居然在麵裡還吃到冬瓜與高麗菜，內用有紅茶喝到飽，但座位不多。
+              </p>
             </div>
           </div>
           <div class="recommand_item">
             <div class="recommand_avatar">
-              <img src="https://image.flaticon.com/icons/svg/145/145843.svg" alt="avatar" />
+              <img
+                src="https://image.flaticon.com/icons/svg/145/145843.svg"
+                alt="avatar"
+              />
             </div>
             <div class="recommand_content">
               <h4 class="recommand_name">~ 我是在地人 ~</h4>
-              <p class="recommand_text">我很常來這間吃，老闆人很和氣。沒有在城隍廟裡吃義大利麵和炒飯過的人可以試試看。義大利麵料多新鮮，口味偏台式。南瓜醬和青醬是老闆手作的，好吃。炒飯口味很家常，推薦雞肉和鮭魚炒飯。</p>
+              <p class="recommand_text">
+                我很常來這間吃，老闆人很和氣。沒有在城隍廟裡吃義大利麵和炒飯過的人可以試試看。義大利麵料多新鮮，口味偏台式。南瓜醬和青醬是老闆手作的，好吃。炒飯口味很家常，推薦雞肉和鮭魚炒飯。
+              </p>
             </div>
           </div>
           <div class="recommand_item">
             <div class="recommand_avatar">
-              <img src="https://image.flaticon.com/icons/svg/145/145844.svg" alt="avatar" />
+              <img
+                src="https://image.flaticon.com/icons/svg/145/145844.svg"
+                alt="avatar"
+              />
             </div>
             <div class="recommand_content">
               <h4 class="recommand_name">~ 美食獵人 ~</h4>
-              <p class="recommand_text">餐點好吃，飯、麵可免費加量一次。個人覺得餐點加了海苔有些多餘，味道都被搶走了⋯奶酪好吃，沙拉和湯一般。整體還不錯，會再次光臨～</p>
+              <p class="recommand_text">
+                餐點好吃，飯、麵可免費加量一次。個人覺得餐點加了海苔有些多餘，味道都被搶走了⋯奶酪好吃，沙拉和湯一般。整體還不錯，會再次光臨～
+              </p>
             </div>
           </div>
         </div>
       </section>
-      
-      <!-- 訂位 -->
+
+      <!-- reserve -->
       <section class="reserve" id="reserve">
-        <h1 class="reserve_title">本店座位不多<br/>請貴客們提早訂位</h1>
+        <h1 class="reserve_title">本店座位不多<br />請貴客們提早訂位</h1>
         <div class="reserve_block">
           <div class="reserve_item">
             <form class="reserve_form">
-              <label> 姓名 </label> <input type="text" name="name" placeholder="你的名子"/>
-              <label> 電話 </label> <input type="text" name="phone" placeholder="你的電話"/>
-              <label> 人數 </label> <input type="number" min="1" max="10" name="name" placeholder="1"/>
-              <label> 用餐時間 </label> <input type="date" name="name" value="2019-01-16" min="2019-01-16" max="2019-12-31" />
+              <label class="reserve_label"> 姓名 </label>
+              <input
+                class="reserve_input"
+                type="text"
+                name="name"
+                placeholder="John david"
+              />
+              <label class="reserve_label"> 電話 </label>
+              <input
+                class="reserve_input"
+                type="text"
+                name="phone"
+                placeholder="XXXX-XXX-XXX"
+              />
+              <label class="reserve_label"> 人數 </label>
+              <input
+                class="reserve_input"
+                type="number"
+                min="1"
+                max="10"
+                name="name"
+                placeholder="1"
+              />
+              <label class="reserve_label"> 用餐時間 </label>
+              <input
+                class="reserve_input"
+                type="date"
+                name="name"
+                value="2019-01-16"
+                min="2019-01-16"
+                max="2019-12-31"
+              />
               <div class="reserve_btn-group">
                 <button class="reserve_btn reserve_btn-cancel">
                   清除
@@ -117,44 +207,40 @@
                   訂位
                 </button>
               </div>
+            </form>
+          </div>
+          <hr />
+          <div class="reserve_item">
+            <h3 class="reverse_address">店址:台北市民生西路186巷5號</h3>
+            <div class="reserve_map">
+              <img src="./pictures/map.JPG" alt="map" />
             </div>
-            <hr>
-            <div  class="reserve_item">
-              <h3 class="reverse_address">店址:台北市民生西路186巷5號</h3>
-              <div class="reserve_map">
-                <img src="./map.JPG" alt="map">
-              </div>
-            </div>
-          </form>
+          </div>
         </div>
       </section>
-      
-      <!-- footer-->
+
+      <!-- footer -->
       <footer class="footer">
-        <div class="footer_block"> 
-          <div class="footer_contact">
-            <div><i class="fas fa-phone"></i>(02)-2689-5554</div>
-            <div><i class="fas fa-map-marker-alt"></i>台北市民生西路186巷5號</div>
-            <div><i class="far fa-envelope"></i>shishi@restaurant.com</div>
+        <div class="footer_contact">
+          <div><i class="fas fa-phone"></i>(02)-2689-5554</div>
+          <div><i class="fas fa-map-marker-alt"></i>台北市民生西路186巷5號</div>
+          <div><i class="far fa-envelope"></i>shishi@restaurant.com</div>
+        </div>
+        <div class="footer_nav">
+          <div class="footer_social">
+            <span>
+              <a href="#"><i class="fab fa-google-plus-square fa-2x"></i></a>
+            </span>
+            <span>
+              <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+            </span>
+            <span>
+              <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+            </span>
           </div>
-          <div class="footer_nav"> 
-            <div class="footer_social">
-              <span >
-                <a href="#"><i class="fab fa-google-plus-square fa-2x"></i></i></a>
-              </span>
-              <span>
-                <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-              </span>
-              <span>
-                <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
-              </span>
-            </div>
-            <div class="footer_logo">面面西食館</div>
-          </div>
+          <div class="footer_logo">面面西食館</div>
         </div>
       </footer>
-    </div> 
-    <script  src="./all.js"></script>
+    </div>
   </body>
-  </html>
-  
+</html>

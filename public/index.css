@@ -1,0 +1,414 @@
+body {
+  margin: 0;
+  background: url(https://images.pexels.com/photos/988873/pexels-photo-988873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) repeat;
+  font-family: "SimHei", "Courier New", Courier, monospace;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+.body_container {
+  max-width: 1000px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.header {
+  background: url(https://www.cleaneatingmag.com/.image/t_share/MTQ0NzQxNjgyODc3Mzc1NjU2/light--easy-prawn-pasta.jpg) center center no-repeat;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+  box-shadow: 2px 2px #888888;
+}
+.header_content {
+  min-width: 60px;
+  position: absolute;
+  padding: 4px 20px;
+  border-radius: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+.header_content > p {
+  letter-spacing: 4px;
+}
+
+.nav {
+  z-index: 100;
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background-color: rgba(10, 10, 10, 0.8);
+  transition: height 1s;
+}
+.nav_item {
+  text-align: center;
+  margin: auto;
+  padding: 8px;
+}
+
+.top {
+  z-index: 100;
+  top: 0;
+  position: sticky;
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  background-color: rgba(10, 10, 10, 0.9);
+  color: white;
+  box-shadow: 2px 2px #888888;
+}
+.top_logo {
+  font-size: 28px;
+  text-align: center;
+  margin: auto;
+}
+.top_btn {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: inherit;
+}
+.top_nav-toggler {
+  position: absolute;
+  transform: scale(2.2);
+  font-size: 16px;
+  right: 22px;
+  opacity: 0;
+}
+.top_nav-toggler:checked + .nav {
+  height: 140px;
+}
+
+@media (min-width: 720px) {
+  .top {
+    justify-content: space-between;
+  }
+  .top_btn {
+    display: none;
+  }
+  .top_logo {
+    margin: 0;
+  }
+
+  .nav {
+    position: relative;
+    height: auto;
+    display: flex;
+    background: none;
+    width: auto;
+  }
+  .nav_item {
+    margin: 6px;
+  }
+}
+.feature {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+.feature_title {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.feature_item {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #cce5ff;
+  border-radius: 4px;
+}
+.feature_item-title {
+  font-weight: bolder;
+}
+.feature_avatar {
+  margin: auto;
+  overflow: hidden;
+  border-radius: 100%;
+  max-width: 200px;
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .feature_block {
+    display: flex;
+  }
+
+  .feature_block {
+    display: flex;
+  }
+
+  .feature_item {
+    flex: 1 1 0;
+  }
+}
+.recommand {
+  padding: 1rem;
+  background: #323232;
+}
+.recommand_title {
+  text-align: center;
+  color: #c8c8c8;
+}
+.recommand_item {
+  background: #c8c8c8;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+.recommand_avatar {
+  flex: 0 0 100px;
+  overflow: hidden;
+}
+.recommand_content {
+  margin: 0 1rem;
+}
+
+.footer {
+  background: black;
+  color: #c8c8c8;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.footer_contact {
+  padding-right: 12px;
+}
+.footer i {
+  margin-right: 6px;
+}
+.footer_logo {
+  font-size: 50px;
+  font-family: "FangSong", "STFangsong", "Courier New", Courier, monospace;
+}
+.footer_social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 720px) {
+  .footer_nav {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+.reserve {
+  padding: 1rem;
+}
+.reserve_title {
+  text-align: center;
+}
+.reserve_block {
+  background-color: white;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-style: solid;
+  border: 3px 0 0 0;
+  border-color: #b55b3b;
+  box-shadow: 3px 3px 0 rgba(50, 50, 50, 0.5);
+}
+.reserve_item {
+  padding: 1rem;
+}
+.reserve_label, .reserve_input {
+  margin-bottom: 16px;
+  padding-bottom: 4px;
+  width: 100%;
+  font-size: 20px;
+}
+.reserve_btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+.reserve_btn {
+  box-sizing: border-box;
+  width: 48%;
+  padding: 5px;
+}
+.reserve_btn-cancel {
+  background-color: #ccccff;
+}
+.reserve_btn-cancel:hover {
+  background-color: #5e86c1;
+}
+.reserve_btn-confirm {
+  background-color: orange;
+}
+.reserve_btn-confirm:hover {
+  background-color: #ff4d00;
+}
+.reserve_map {
+  box-sizing: border-box;
+  padding: 0.1rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+@media (min-width: 720px) {
+  .reserve_block {
+    display: flex;
+  }
+
+  .reserve_item {
+    flex: 1 1 0;
+  }
+}
+.product {
+  background-image: url(https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  padding: 1rem 3rem;
+}
+.product_searchbar {
+  color: white;
+  border: 4px solid #470024;
+  background-color: #470024;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  height: 20px;
+}
+.product_searchbar input {
+  height: 100%;
+  display: block;
+  width: 100%;
+  border: none;
+}
+.product_searchbar button {
+  height: 105%;
+  background-color: inherit;
+  color: white;
+  border: none;
+}
+
+.product_showcase {
+  position: relative;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  justify-content: space-between;
+}
+.product_showcase .product_goods {
+  margin: 6px;
+  text-align: center;
+  background: white;
+  box-shadow: 2px 2px;
+}
+.product_showcase .product_image {
+  position: relative;
+}
+.product_showcase .product_favorite {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.product_showcase .product_btn {
+  margin: 1rem 5%;
+  width: 90%;
+  padding: 10px;
+  border: #ff4d00 solid 2px;
+  box-sizing: border-box;
+}
+
+.product_menu_title {
+  color: white;
+  background-color: #470024;
+  text-align: center;
+  padding: 4px 0;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  margin-bottom: 8px;
+}
+.product_menu_content {
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+}
+.product_menu_item {
+  letter-spacing: 2px;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  padding: 0.5rem;
+}
+.product_menu_item--active {
+  background-color: #470024;
+  color: white;
+}
+.product_menu_item:hover {
+  background-color: rgba(50, 50, 50, 0.5);
+  color: white;
+}
+.product_menu_item a:hover {
+  display: block;
+}
+
+@media (min-width: 720px) {
+  .product {
+    display: flex;
+  }
+
+  .product {
+    display: flex;
+  }
+
+  .product_menu {
+    flex: 0 0 200px;
+    margin-right: 8px;
+  }
+
+  .product_area {
+    margin-left: 8px;
+    flex: 1 1 0;
+  }
+}
+.login {
+  text-align: center;
+  padding: 1rem;
+}
+.login_title {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.login_block {
+  background-color: white;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-style: solid;
+  border-color: #b55b3b;
+  box-shadow: 3px 3px 0 rgba(50, 50, 50, 0.5);
+  max-width: 300px;
+}
+.login_btn {
+  letter-spacing: 3px;
+  font-weight: bolder;
+  padding: 0.5rem;
+  background-color: cadetblue;
+}
+.login form > * {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+/*# sourceMappingURL=index.css.map */

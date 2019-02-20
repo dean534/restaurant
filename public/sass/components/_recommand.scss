@@ -1,0 +1,27 @@
+.recommand {
+    padding: 1rem;
+    background: rgb(50, 50, 50);
+    &_title {
+      text-align: center;
+      color: rgb(200, 200, 200);
+    }
+  
+    &_item {
+      background: rgb(200, 200, 200);
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      margin: 1rem;
+      padding: 1rem;
+    }
+  
+    &_avatar {
+      flex: 0 0 100px;
+      overflow: hidden;
+    }
+  
+    &_content {
+      margin: 0 1rem;
+    }
+  }
+  

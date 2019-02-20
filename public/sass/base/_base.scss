@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background: url(https://images.pexels.com/photos/988873/pexels-photo-988873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+    repeat;
+  font-family: "SimHei", "Courier New", Courier, monospace;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  width: 100%;
+}
+
+.body_container {
+  max-width: 1000px;
+  margin: auto;
+  background: rgba($color: white, $alpha: 0.7);
+}
